@@ -1,0 +1,21 @@
+[user]
+	name = Johan Ju
+	email = johanj93@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	cp = cherry-pick
+	aa = "commit --amend --no-edit"
+	cl = clone
+	pr = "pull --rebase"
+	last = log -1 HEAD
+	unstage = reset HEAD --
+	df = diff
+	dc = diff --cached
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lol = log --graph --decorate=full --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate=full --pretty=oneline --abbrev-commit --all
+	loll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short --branches
+	squash = "!f(){ git reset --soft HEAD~${1} && git commit; };f"
